@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
+
+.everything{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+body{
+    background-image: url(imagens/background2.jpg); background-size: cover;
+}
+
+.line{
+    display: flex;
+    width: 560px; height: 70px;
+}
+
+.square{
+    /*width: 70px; height: 70px;*/
+    border: solid black;
+    flex: 1;
+}
+
+.title{
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 80px;
+}
+
+.subtitle{
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 25px;
+}
+
+.dark{
+    background-color: rgb(103, 57, 0);
+}
+
+.light{
+    background-color: rgb(209, 146, 74);
+}
+
+.kingb{
+    background-image: url(imagens/kingb.png); background-size: cover;
+}
+
+.kingw{
+    background-image: url(imagens/kingw.png); background-size: cover;
+}
+
+.queenb{
+    background-image: url(imagens/queenb.png); background-size: cover;
+}
+
+.queenw{
+    background-image: url(imagens/queenw.png); background-size: cover;
+}
+
+.bishopb{
+    background-image: url(imagens/bishopb.png); background-size: cover;
+}
+
+.bishopw{
+    background-image: url(imagens/bishopw.png); background-size: cover;
+}
+
+.knightb{
+    background-image: url(imagens/knightb.png); background-size: cover;
+}
+
+.knightw{
+    background-image: url(imagens/knightw.png); background-size: cover;
+}
+
+.rookb{
+    background-image: url(imagens/rookb.png); background-size: cover;
+}
+
+.rookw{
+    background-image: url(imagens/rookw.png); background-size: cover;
+}
+
+.pawnb{
+    background-image: url(imagens/pawnb.png); background-size: cover;
+}
+
+.pawnw{
+    background-image: url(imagens/pawnw.png); background-size: cover;
+}

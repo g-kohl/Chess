@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Chess</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <center>
+            <div><text class="title">CHESS</text></div>
+            <div><text class="subtitle">(as it should be)</text></div>
+        </center>
+        <div class="everything">
+            <div class="board">
+                <div class="line">
+                    <div id="a8" onclick="move(this.id)" class="square light rookb"></div>
+                    <div id="b8" onclick="move(this.id)" class="square dark knightb"></div>
+                    <div id="c8" onclick="move(this.id)" class="square light bishopb"></div>
+                    <div id="d8" onclick="move(this.id)" class="square dark queenb"></div>
+                    <div id="e8" onclick="move(this.id)" class="square light kingb"></div>
+                    <div id="f8" onclick="move(this.id)" class="square dark bishopb"></div>
+                    <div id="g8" onclick="move(this.id)" class="square light knightb"></div>
+                    <div id="h8" onclick="move(this.id)" class="square dark rookb"></div>
+                </div>
+                <div class="line">
+                    <div id="a7" onclick="move(this.id)" class="square dark pawnb"></div>
+                    <div id="b7" onclick="move(this.id)" class="square light pawnb"></div>
+                    <div id="c7" onclick="move(this.id)" class="square dark pawnb"></div>
+                    <div id="d7" onclick="move(this.id)" class="square light pawnb"></div>
+                    <div id="e7" onclick="move(this.id)" class="square dark pawnb"></div>
+                    <div id="f7" onclick="move(this.id)" class="square light pawnb"></div>
+                    <div id="g7" onclick="move(this.id)" class="square dark pawnb"></div>
+                    <div id="h7" onclick="move(this.id)" class="square light pawnb"></div>
+                </div>
+                <div class="line">
+                    <div id="a6" onclick="move(this.id)" class="square light"></div>
+                    <div id="b6" onclick="move(this.id)" class="square dark"></div>
+                    <div id="c6" onclick="move(this.id)" class="square light"></div>
+                    <div id="d6" onclick="move(this.id)" class="square dark"></div>
+                    <div id="e6" onclick="move(this.id)" class="square light"></div>
+                    <div id="f6" onclick="move(this.id)" class="square dark"></div>
+                    <div id="g6" onclick="move(this.id)" class="square light"></div>
+                    <div id="h6" onclick="move(this.id)" class="square dark"></div>
+                </div>
+                <div class="line">
+                    <div id="a5" onclick="move(this.id)" class="square dark"></div>
+                    <div id="b5" onclick="move(this.id)" class="square light"></div>
+                    <div id="c5" onclick="move(this.id)" class="square dark"></div>
+                    <div id="d5" onclick="move(this.id)" class="square light"></div>
+                    <div id="e5" onclick="move(this.id)" class="square dark"></div>
+                    <div id="f5" onclick="move(this.id)" class="square light"></div>
+                    <div id="g5" onclick="move(this.id)" class="square dark"></div>
+                    <div id="h5" onclick="move(this.id)" class="square light"></div>
+                </div>
+                <div class="line">
+                    <div id="a4" onclick="move(this.id)" class="square light"></div>
+                    <div id="b4" onclick="move(this.id)" class="square dark"></div>
+                    <div id="c4" onclick="move(this.id)" class="square light"></div>
+                    <div id="d4" onclick="move(this.id)" class="square dark"></div>
+                    <div id="e4" onclick="move(this.id)" class="square light"></div>
+                    <div id="f4" onclick="move(this.id)" class="square dark"></div>
+                    <div id="g4" onclick="move(this.id)" class="square light"></div>
+                    <div id="h4" onclick="move(this.id)" class="square dark"></div>
+                </div>
+                <div class="line">
+                    <div id="a3" onclick="move(this.id)" class="square dark"></div>
+                    <div id="b3" onclick="move(this.id)" class="square light"></div>
+                    <div id="c3" onclick="move(this.id)" class="square dark"></div>
+                    <div id="d3" onclick="move(this.id)" class="square light"></div>
+                    <div id="e3" onclick="move(this.id)" class="square dark"></div>
+                    <div id="f3" onclick="move(this.id)" class="square light"></div>
+                    <div id="g3" onclick="move(this.id)" class="square dark"></div>
+                    <div id="h3" onclick="move(this.id)" class="square light"></div>
+                </div>
+                <div class="line">
+                    <div id="a2" onclick="move(this.id)" class="square light pawnw"></div>
+                    <div id="b2" onclick="move(this.id)" class="square dark pawnw"></div>
+                    <div id="c2" onclick="move(this.id)" class="square light pawnw"></div>
+                    <div id="d2" onclick="move(this.id)" class="square dark pawnw"></div>
+                    <div id="e2" onclick="move(this.id)" class="square light pawnw"></div>
+                    <div id="f2" onclick="move(this.id)" class="square dark pawnw"></div>
+                    <div id="g2" onclick="move(this.id)" class="square light pawnw"></div>
+                    <div id="h2" onclick="move(this.id)" class="square dark pawnw"></div>
+                </div>
+                <div class="line">
+                    <div id="a1" onclick="move(this.id)" class="square dark rookw"></div>
+                    <div id="b1" onclick="move(this.id)" class="square light knightw"></div>
+                    <div id="c1" onclick="move(this.id)" class="square dark bishopw"></div>
+                    <div id="d1" onclick="move(this.id)" class="square light queenw"></div>
+                    <div id="e1" onclick="move(this.id)" class="square dark kingw"></div>
+                    <div id="f1" onclick="move(this.id)" class="square light bishopw"></div>
+                    <div id="g1" onclick="move(this.id)" class="square dark knightw"></div>
+                    <div id="h1" onclick="move(this.id)" class="square light rookw"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
