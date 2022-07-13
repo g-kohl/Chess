@@ -4,14 +4,37 @@
         <meta charset="UTF-8">
         <title>Chess</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="styleModal.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
+        <div class="info">
+            <button class="infoButton" onclick="openModal()"><i class='fa fa-info-circle'></i></button>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modalContent w3-animate-top">
+                <span class="close">&times;</span>
+                <p>Programmed and designed by Guilherme Kohl</p>
+                <p>Github: <a href="https://github.com/g-kohl">g-kohl</a></p>
+                <p>Version: 1.1</p>
+            </div>
+        </div>
         <center>
             <div><text class="title">CHESS</text></div>
             <div><text class="subtitle">(as it should be)</text></div>
         </center>
         <div class="everything">
-            <div class="board">
+            <div class="parent child">
+                <div class="parent1">
+                    <div><button id="trashCan" onclick="move(this.id)" class="trashCan child"><i class="fa-solid fa-trash-can"></i></button></div>
+                    <div><button onclick="window.location.reload()" class="reloadButton child"><i class="fa">&#xf021;</i></button></div>
+                </div>
+                
+            </div>
+            <div class="board child">
                 <div class="line">
                     <div id="a8" onclick="move(this.id)" class="square light rookb"></div>
                     <div id="b8" onclick="move(this.id)" class="square dark knightb"></div>
@@ -33,44 +56,44 @@
                     <div id="h7" onclick="move(this.id)" class="square light pawnb"></div>
                 </div>
                 <div class="line">
-                    <div id="a6" onclick="move(this.id)" class="square light"></div>
-                    <div id="b6" onclick="move(this.id)" class="square dark"></div>
-                    <div id="c6" onclick="move(this.id)" class="square light"></div>
-                    <div id="d6" onclick="move(this.id)" class="square dark"></div>
-                    <div id="e6" onclick="move(this.id)" class="square light"></div>
-                    <div id="f6" onclick="move(this.id)" class="square dark"></div>
-                    <div id="g6" onclick="move(this.id)" class="square light"></div>
-                    <div id="h6" onclick="move(this.id)" class="square dark"></div>
+                    <div id="a6" onclick="move(this.id)" class="square light x"></div>
+                    <div id="b6" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="c6" onclick="move(this.id)" class="square light x"></div>
+                    <div id="d6" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="e6" onclick="move(this.id)" class="square light x"></div>
+                    <div id="f6" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="g6" onclick="move(this.id)" class="square light x"></div>
+                    <div id="h6" onclick="move(this.id)" class="square dark x"></div>
                 </div>
                 <div class="line">
-                    <div id="a5" onclick="move(this.id)" class="square dark"></div>
-                    <div id="b5" onclick="move(this.id)" class="square light"></div>
-                    <div id="c5" onclick="move(this.id)" class="square dark"></div>
-                    <div id="d5" onclick="move(this.id)" class="square light"></div>
-                    <div id="e5" onclick="move(this.id)" class="square dark"></div>
-                    <div id="f5" onclick="move(this.id)" class="square light"></div>
-                    <div id="g5" onclick="move(this.id)" class="square dark"></div>
-                    <div id="h5" onclick="move(this.id)" class="square light"></div>
+                    <div id="a5" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="b5" onclick="move(this.id)" class="square light x"></div>
+                    <div id="c5" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="d5" onclick="move(this.id)" class="square light x"></div>
+                    <div id="e5" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="f5" onclick="move(this.id)" class="square light x"></div>
+                    <div id="g5" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="h5" onclick="move(this.id)" class="square light x"></div>
                 </div>
                 <div class="line">
-                    <div id="a4" onclick="move(this.id)" class="square light"></div>
-                    <div id="b4" onclick="move(this.id)" class="square dark"></div>
-                    <div id="c4" onclick="move(this.id)" class="square light"></div>
-                    <div id="d4" onclick="move(this.id)" class="square dark"></div>
-                    <div id="e4" onclick="move(this.id)" class="square light"></div>
-                    <div id="f4" onclick="move(this.id)" class="square dark"></div>
-                    <div id="g4" onclick="move(this.id)" class="square light"></div>
-                    <div id="h4" onclick="move(this.id)" class="square dark"></div>
+                    <div id="a4" onclick="move(this.id)" class="square light x"></div>
+                    <div id="b4" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="c4" onclick="move(this.id)" class="square light x"></div>
+                    <div id="d4" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="e4" onclick="move(this.id)" class="square light x"></div>
+                    <div id="f4" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="g4" onclick="move(this.id)" class="square light x"></div>
+                    <div id="h4" onclick="move(this.id)" class="square dark x"></div>
                 </div>
                 <div class="line">
-                    <div id="a3" onclick="move(this.id)" class="square dark"></div>
-                    <div id="b3" onclick="move(this.id)" class="square light"></div>
-                    <div id="c3" onclick="move(this.id)" class="square dark"></div>
-                    <div id="d3" onclick="move(this.id)" class="square light"></div>
-                    <div id="e3" onclick="move(this.id)" class="square dark"></div>
-                    <div id="f3" onclick="move(this.id)" class="square light"></div>
-                    <div id="g3" onclick="move(this.id)" class="square dark"></div>
-                    <div id="h3" onclick="move(this.id)" class="square light"></div>
+                    <div id="a3" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="b3" onclick="move(this.id)" class="square light x"></div>
+                    <div id="c3" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="d3" onclick="move(this.id)" class="square light x"></div>
+                    <div id="e3" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="f3" onclick="move(this.id)" class="square light x"></div>
+                    <div id="g3" onclick="move(this.id)" class="square dark x"></div>
+                    <div id="h3" onclick="move(this.id)" class="square light x"></div>
                 </div>
                 <div class="line">
                     <div id="a2" onclick="move(this.id)" class="square light pawnw"></div>
@@ -93,8 +116,23 @@
                     <div id="h1" onclick="move(this.id)" class="square light rookw"></div>
                 </div>
             </div>
+            <div class="parent child">
+                <div id="optionsWhite" style="display: none;">
+                    <div><button onclick="promotion(this.className)" class="square options queenw"></button></div>
+                    <div><button onclick="promotion(this.className)" class="square options rookw"></button></div>
+                    <div><button onclick="promotion(this.className)" class="square options bishopw"></button></div>
+                    <div><button onclick="promotion(this.className)" class="square options knightw"></button></div>
+                </div>
+                <div id="optionsBlack" style="display: none;">
+                    <div><button onclick="promotion(this.className)" class="square options queenb"></button></div>
+                    <div><button onclick="promotion(this.className)" class="square options rookb"></button></div>
+                    <div><button onclick="promotion(this.className)" class="square options bishopb"></button></div>
+                    <div><button onclick="promotion(this.className)" class="square options knightb"></button></div>
+                </div>
+            </div>
         </div>
 
         <script src="script.js"></script>
+        <script src="scriptModal.js"></script>
     </body>
 </html>
